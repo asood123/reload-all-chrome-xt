@@ -1,0 +1,24 @@
+{
+  "name": "Reload All Tabs",
+  "version": "1.0",
+  "description": "Reloads all tabs in a browser window",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+
+  },
+  "manifest_version": 2,
+  "commands": {
+    "reload-all-tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Space"
+      },
+      "description": "Reloads all tabs"
+    }
+  }
+}
