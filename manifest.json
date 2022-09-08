@@ -1,18 +1,18 @@
 {
   "name": "Reload All Tabs",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Reloads all tabs in a browser window",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "contextMenus"
   ],
   "action": {
 
   },
-  "manifest_version": 2,
+  "manifest_version": 3,
   "commands": {
     "reload-all-tabs": {
       "suggested_key": {
